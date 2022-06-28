@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import '@quasar/extras/fontawesome-v6/fontawesome-v6.css'
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 

@@ -15,7 +15,10 @@ const app = createApp(App)
 app.use(router)
 
 app.use(Quasar, {
-    plugins: {}, // import Quasar plugins and add here
+    plugins: {
+
+
+    }, // import Quasar plugins and add here
 })
 
 app.mount('#app')

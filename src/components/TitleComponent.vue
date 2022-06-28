@@ -28,9 +28,8 @@
   padding: calc(4.5rem + 3rem) 32px;
   background: linear-gradient(180deg,rgba(112,93,80,.8) 0,rgba(112,93,80,.8) 90%),url(@/assets/titleImage.jpg) 50% no-repeat;
   background-size: inherit;
+  height: 580px;
   width: 100%;
-  min-height: 65vh;
-  height: 65vh;
   position: relative;
   display: flex;
   flex-direction: column;
