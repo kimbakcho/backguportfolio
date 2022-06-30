@@ -54,6 +54,9 @@
     <AboutMe>
 
     </AboutMe>
+    <Skilles>
+
+    </Skilles>
   </div>
 
 </template>
@@ -61,6 +64,7 @@
 <script setup lang="ts">
 import TitleComponent from "@/components/TitleComponent.vue"
 import AboutMe from "@/components/AboutMe.vue"
+import Skilles from "@/components/Skilles.vue"
 import {onMounted, ref} from "vue";
 
 let openNabToggle = ref(false)
@@ -69,7 +73,9 @@ let currentScrollY = ref(0);
 let root = ref<HTMLDivElement|null>(null);
 onMounted(()=>{
   window.addEventListener("scroll",rootScrollEvent)
+  window.addEventListener("resize",reSizeEvent)
 })
+
 function toggleOpenNav(){
   openNabToggle.value = !openNabToggle.value
 }
@@ -81,11 +87,17 @@ function isXsScrollOver(){
     return true
   }
 }
+function reSizeEvent(){
+  console.log(window.innerWidth)
+  if(window.innerWidth>1200){
+    openNabToggle.value = false;
+  }
 
+}
 function rootScrollEvent(value: Event){
 
   currentScrollY.value =window.scrollY;
-  // console.log(currentScrollY.value)
+
 
 }
 

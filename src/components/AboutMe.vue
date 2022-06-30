@@ -1,7 +1,7 @@
 <template>
-  <div style="width: 100%; display: flex;justify-content: center">
+  <div style="width: 100%; display: flex;justify-content: center;padding: 64px 0px">
     <div style="max-width: 70vw;width: 70vw">
-      <div class="AboutName" style="padding: 16px 0px">
+      <div class="AboutName" style="padding-bottom: 32px">
         <q-icon name="fa-solid fa-address-card" size="3rem" class="aboutMeIcon">
 
         </q-icon>
