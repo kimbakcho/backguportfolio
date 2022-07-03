@@ -57,6 +57,12 @@
     <Skilles>
 
     </Skilles>
+    <Archiving>
+
+    </Archiving>
+    <Projects>
+
+    </Projects>
   </div>
 
 </template>
@@ -65,6 +71,8 @@
 import TitleComponent from "@/components/TitleComponent.vue"
 import AboutMe from "@/components/AboutMe.vue"
 import Skilles from "@/components/Skilles.vue"
+import Archiving from "@/components/Archiving.vue"
+import Projects from "@/components/Projects.vue"
 import {onMounted, ref} from "vue";
 
 let openNabToggle = ref(false)

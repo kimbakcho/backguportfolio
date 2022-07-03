@@ -1,7 +1,7 @@
 <template>
   <div class="root">
-    <div style="max-width: 70vw;width: 70vw; padding: 64px 32px">
-      <div class="Skills" style="padding: 16px 0px">
+    <div style="width: 70vw; padding: 64px 32px;">
+      <div class="Skills" >
         <q-icon name="fa-solid fa-atom" size="3rem" class="skillIcon">
         </q-icon>
         <div class="skillsTitle">
@@ -9,12 +9,60 @@
         </div>
       </div>
       <div>
-        <div style="display: flex;flex-flow:column wrap">
+        <div class="contentBoxRoot">
           <div class="contentBox" >
             <div class="contentTitle">
               Frontend
             </div>
-            <img src="@/assets/skilllogo.png" style="margin-top: 16px">
+            <img src="@/assets/frontskilllogo.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              Backend
+            </div>
+            <img src="@/assets/backendskill.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              Mobile App
+            </div>
+            <img src="@/assets/mobileAppSkill.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              Embedded
+            </div>
+            <img src="@/assets/embeddedSkill.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              AI
+            </div>
+            <img src="@/assets/aiskill.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              산업용 프로토콜
+            </div>
+            <img src="@/assets/industryProtocolSkill.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              Version Control
+            </div>
+            <img src="@/assets/versioncontrol.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              Deployment
+            </div>
+            <img src="@/assets/deploymentskill.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              Certificate
+            </div>
+            <img src="@/assets/certificateskill.png" style="margin-top: 16px">
           </div>
         </div>
       </div>
@@ -32,6 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 16px 0px
 }
 .root{
   width: 100%;
@@ -53,12 +102,19 @@
   margin-left: 32px;
   border-bottom: 1px solid black;
 }
+.contentBoxRoot{
+  display: flex;
+  flex-flow:column wrap;
+  height: 1500px;
+  align-content: space-around;
+}
 .contentBox{
   border-radius: 1rem;
   background-color: white;
   box-shadow: 1rem 1rem 1rem 0rgba(68,68,68,.2);
   padding: 24px;
   width: 17rem;
+  margin-top: 16px;
 }
 .contentTitle{
   padding-bottom: 0.5rem;
@@ -66,7 +122,6 @@
   font-size: 1.5rem;
   color: #f4623a;
   font-weight: 700;
-
 }
 
 </style>
