@@ -11,7 +11,18 @@
 
     <div style="display: flex; justify-content: space-between">
       <div class="slider">
-        슬라이드 자리
+        <swiper
+            :modules="modules"
+            navigation
+            :pagination="{ clickable: true }"
+            class="projectCardSwiper" >
+          <swiper-slide v-for="item in sliderImage">
+            <div style="display: flex;justify-content: center">
+              <img :src="getImageUrl(item)" style="height: 500px">
+            </div>
+
+          </swiper-slide>
+        </swiper>
       </div>
       <div class="content">
         <div class="contentTextBox">
@@ -34,11 +45,28 @@
 </template>
 
 <script setup lang="ts">
+// Import Swiper Vue.js components
+import { Navigation, Pagination } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import {reactive} from "vue";
 const props = defineProps<{
   title: string,
-  subtitle: string
-
+  subtitle: string,
+  sliderImage: string[]
 }>()
+
+function getImageUrl(image: string){
+  const imageUrl = new URL(image, import.meta.url).href
+  return imageUrl
+}
+const modules = reactive([
+    Navigation,Pagination
+])
 </script>
 
 <style scoped>
@@ -79,10 +107,23 @@ const props = defineProps<{
 }
 .slider{
   flex-grow: 1;
+  max-width: 50%;
 }
 .content{
   flex-grow: 1;
   margin-left: 32px;
   max-width: 50%;
+}
+.projectCardSwiper{
+  max-height: 500px;
+  margin: 16px;
+}
+</style>
+<style>
+.swiper-pagination-bullet{
+  background: white;
+}
+.swiper-pagination-bullet-active{
+  background: #1d809f;
 }
 </style>
