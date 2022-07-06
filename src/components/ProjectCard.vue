@@ -29,7 +29,7 @@
           <slot name="contentText" >
 
           </slot>
-          <div class="detailBtn">
+          <div class="detailBtn" @click="detailShow()">
             자세히 보기 ▶ README
           </div>
         </div>
@@ -59,6 +59,7 @@ const props = defineProps<{
   subtitle: string,
   sliderImage: string[]
 }>()
+const emits = defineEmits(['detailShow'])
 
 function getImageUrl(image: string){
   const imageUrl = new URL(image, import.meta.url).href
@@ -67,6 +68,9 @@ function getImageUrl(image: string){
 const modules = reactive([
     Navigation,Pagination
 ])
+function detailShow(){
+  emits("detailShow")
+}
 </script>
 
 <style scoped>
@@ -86,6 +90,7 @@ const modules = reactive([
   cursor: pointer;
   padding: 0.5rem 1rem;
   width: 12rem;
+  border-radius: 8px;
 }
 .detailBtn:hover{
   background: #444;
