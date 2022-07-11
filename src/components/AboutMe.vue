@@ -10,7 +10,8 @@
           About Me
         </div>
       </div>
-      <div style="display: flex;width: 100%;">
+
+      <div class="contentContainer">
         <div class="contentRoot" >
           <q-icon name="fa-solid fa-user-large" size="1.75rem" style="margin-top: 0.25rem">
 
@@ -50,8 +51,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div style="display: flex;width: 100%; margin-top: 32px">
         <div class="contentRoot" >
           <q-icon name="fa-solid fa-user-large" size="1.75rem" style="margin-top: 0.25rem">
 
@@ -127,7 +126,7 @@
 .inContent {
   margin-left: 32px;
   line-height: 2rem;
-  width: 30%;
+  width: 50%;
 }
 
 .contentTitle {
@@ -143,9 +142,31 @@
 }
 .contentRoot{
   display: flex;
-  width: 33.3%;
   justify-content: center;
+  flex-wrap: nowrap;
+  width: 33.3%;
+}
+.contentContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: start;
 }
 
+@media screen and (max-width:1200px) {
 
+
+  .contentRoot{
+    width: 50%;
+  }
+
+}
+@media screen and (max-width:768px) {
+  .contentRoot{
+    width: 100%;
+  }
+
+}
+@media screen and (max-width:480px) {
+
+}
 </style>

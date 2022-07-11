@@ -39,11 +39,13 @@
 .divide{
   background: #f4623a;
   width: 100px;
-  height: 3px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  min-height: 3px;
 }
 .titleDescription{
   text-align: center;
-  padding-top: 3rem;
+
   color: hsla(0,0%,100%,.75);
   font-weight: 400;
   font-family: "Noto Sans KR";
@@ -63,4 +65,27 @@
   font-family: 'Noto Sans KR';
   padding: 0px 32px;
 }
+
+@media screen and (max-width:1200px) {
+  #mainTitleText{
+    font-size: 3.1rem;color: white;
+  }
+  .titleDescription{
+    font-size: 1.2rem;
+    line-height: 1rem;
+  }
+}
+@media screen and (max-width:768px) {
+  #mainTitleText{
+    font-size: 2.8rem;color: white;
+  }
+  .titleDescription{
+    font-size: 0.95rem;
+    line-height: 1rem;
+  }
+}
+@media screen and (max-width:480px) {
+
+}
+
 </style>
