@@ -308,4 +308,11 @@ function onDetailShow(){
   font-family: 'Noto Sans KR';
   margin-bottom: 32px;
 }
+@media screen and (max-width:768px) {
+  .container {
+    grid-template-columns: 1fr;
+    overflow-wrap: anywhere;
+  }
+
+}
 </style>

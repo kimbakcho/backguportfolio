@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div style="display: flex; justify-content: space-between">
+    <div class="contentRoot" >
       <div class="slider">
         <swiper
             :modules="modules"
@@ -18,7 +18,7 @@
             class="projectCardSwiper" >
           <swiper-slide v-for="item in sliderImage">
             <div style="display: flex;justify-content: center">
-              <img :src="getImageUrl(item)" style="height: 500px">
+              <img :src="getImageUrl(item)" class="projectImg" >
             </div>
 
           </swiper-slide>
@@ -34,7 +34,7 @@
           </div>
         </div>
 
-        <slot name="summary">
+        <slot name="summary" class="container1">
 
         </slot>
       </div>
@@ -53,13 +53,14 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import {reactive} from "vue";
+import {onMounted, reactive} from "vue";
 const props = defineProps<{
   title: string,
   subtitle: string,
   sliderImage: string[]
 }>()
 const emits = defineEmits(['detailShow'])
+
 
 function getImageUrl(image: string){
   const imageUrl = new URL(image, import.meta.url).href
@@ -83,6 +84,7 @@ function detailShow(){
 .contentTextBox{
   border-bottom: 1px solid #cccccc;
   padding: 16px 0px;
+  width: calc(70vw - 620px);
 }
 .detailBtn{
   background: #222;
@@ -111,17 +113,50 @@ function detailShow(){
   font-weight: 400;
 }
 .slider{
-  flex-grow: 1;
-  max-width: 50%;
+  width: 500px;
 }
-.content{
-  flex-grow: 1;
-  margin-left: 32px;
-  max-width: 50%;
-}
+
 .projectCardSwiper{
   max-height: 500px;
   margin: 16px;
+}
+.contentRoot{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+}
+.projectImg{
+  height: 500px;
+}
+@media screen and (max-width:1800px) {
+  .contentRoot{
+    grid-template-columns: 1fr;
+  }
+  .contentTextBox{
+    border-bottom: 1px solid #cccccc;
+    padding: 16px 0px;
+    width: calc(70vw - 110px);
+  }
+  .slider{
+    justify-self: center;
+
+  }
+}
+@media screen and (max-width:900px) {
+  .projectImg{
+    height: 280px;
+  }
+  .slider{
+    width: calc(70vw - 160px);
+  }
+}
+@media screen and (max-width:768px) {
+
+
+}
+@media screen and (max-width:480px) {
+
+
 }
 </style>
 <style>

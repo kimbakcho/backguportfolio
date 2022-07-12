@@ -123,5 +123,19 @@
   color: #f4623a;
   font-weight: 700;
 }
+@media screen and (max-width:1200px) {
+  .contentBoxRoot{
+    height: 1810px;
+  }
 
+}
+@media screen and (max-width:768px) {
+  .contentBoxRoot{
+    height: 3620px;
+  }
+
+}
+@media screen and (max-width:480px) {
+
+}
 </style>

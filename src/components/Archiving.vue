@@ -8,7 +8,7 @@
           ARCHIVING
         </div>
       </div>
-      <div style="display: flex;padding: 16px 0px;justify-content: space-around">
+      <div class="cardRoot">
         <div class="card" @click="goToLinkSite('https://github.com/kimbakcho')">
           <div class="archTitle">
             <q-icon name="fa-brands fa-github">
@@ -104,6 +104,11 @@ function goToLinkSite(site: string){
   font-size: 3rem;
   padding-bottom: 16px;
 }
+.cardRoot{
+  display: flex;
+  padding: 16px 0px;
+  justify-content: space-around;
+}
 .card{
   background: white;
   padding: 32px;
@@ -120,6 +125,22 @@ function goToLinkSite(site: string){
 }
 .link:hover{
   text-decoration: underline;
+}
+
+@media screen and (max-width:1200px) {
+  .card{
+    width: 30rem;
+    margin-top: 16px;
+  }
+  .cardRoot{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width:768px) {
+
+}
+@media screen and (max-width:480px) {
+
 }
 </style>
 
