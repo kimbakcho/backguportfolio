@@ -1,24 +1,24 @@
 <template>
-  <div class="root">
+  <div class="root" ref="root">
     <header id="xsHeader" :class="{xsScrollOver: isXsScrollOver()}" >
       <div id="xsHeader1">
-        <nav id="homeNav">
+        <nav id="homeNav" @click="gotoHomeScroll">
           백구 Portfolio
         </nav>
         <div>
           <nav id="SubNav">
-            <div class="headerBtn">About Me</div>
-            <div class="headerBtn">Skills</div>
-            <div class="headerBtn">Archiving</div>
-            <div class="headerBtn">Projects</div>
-            <div class="headerBtn">Career</div>
+            <div class="headerBtn" @click="gotoAboutMe">About Me</div>
+            <div class="headerBtn" @click="gotoSkill">Skills</div>
+            <div class="headerBtn" @click="gotoArchiving">Archiving</div>
+            <div class="headerBtn" @click="gotoProjects">Projects</div>
+            <div class="headerBtn" @click="gotoCareer">Career</div>
           </nav>
         </div>
       </div>
     </header>
     <header id="lgHeader">
       <div id="lgHeader1">
-        <nav id="homeNav">
+        <nav id="homeNav" @click="gotoHomeScroll">
           백구 Portfolio
         </nav>
         <div>
@@ -31,19 +31,19 @@
 
       </div>
       <div class="lgOpenNav" :class="{openNav: openNabToggle}">
-        <div class="lgOpenNavItem">
+        <div class="lgOpenNavItem" @click="gotoAboutMe">
           About Me
         </div>
-        <div class="lgOpenNavItem">
+        <div class="lgOpenNavItem" @click="gotoSkill">
           Skills
         </div>
-        <div class="lgOpenNavItem">
+        <div class="lgOpenNavItem" @click="gotoArchiving">
           Archiving
         </div>
-        <div class="lgOpenNavItem">
+        <div class="lgOpenNavItem" @click="gotoProjects">
           projects
         </div>
-        <div class="lgOpenNavItem">
+        <div class="lgOpenNavItem" @click="gotoCareer">
           Career
         </div>
       </div>
@@ -51,18 +51,21 @@
     <TitleComponent>
 
     </TitleComponent>
-    <AboutMe>
+    <AboutMe ref="aboutMe">
 
     </AboutMe>
-    <Skilles>
+    <Skilles ref="skill">
 
     </Skilles>
-    <Archiving>
+    <Archiving ref="archiving">
 
     </Archiving>
-    <Projects>
+    <Projects ref="projects">
 
     </Projects>
+    <Career ref="career">
+
+    </Career>
   </div>
 
 </template>
@@ -73,6 +76,7 @@ import AboutMe from "@/components/AboutMe.vue"
 import Skilles from "@/components/Skilles.vue"
 import Archiving from "@/components/Archiving.vue"
 import Projects from "@/components/Projects.vue"
+import Career from "@/components/Career.vue"
 import {onMounted, ref} from "vue";
 
 let openNabToggle = ref(false)
@@ -95,22 +99,84 @@ function isXsScrollOver(){
     return true
   }
 }
+
 function reSizeEvent(){
   console.log(window.innerWidth)
+
   if(window.innerWidth>1200){
     openNabToggle.value = false;
   }
-
 }
+onMounted(()=>{
+  reSizeEvent();
+})
 function rootScrollEvent(value: Event){
-
-  currentScrollY.value =window.scrollY;
-
-
+  currentScrollY.value = window.scrollY;
+}
+function gotoHomeScroll(){
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
 }
 
+const aboutMe = ref();
+function gotoAboutMe(){
+  let aboutMeDiv = aboutMe.value.$el as HTMLDivElement;
+  window.scrollTo({
+    top: aboutMeDiv.offsetTop - 64,
+    behavior: "smooth"
+  })
+  openNabToggle.value = false;
+}
 
+const skill = ref();
+function gotoSkill(){
+  let skillDiv = skill.value.$el as HTMLDivElement;
+  window.scrollTo({
+    top: skillDiv.offsetTop - 64,
+    behavior: "smooth"
+  })
+  openNabToggle.value = false;
+}
+
+const archiving = ref();
+
+function gotoArchiving(){
+  let archivingDiv = archiving.value.$el as HTMLDivElement;
+  window.scrollTo({
+    top: archivingDiv.offsetTop - 64,
+    behavior: "smooth"
+  })
+  openNabToggle.value = false;
+}
+
+const projects = ref();
+function gotoProjects() {
+  let projectsgDiv = projects.value.$el as HTMLDivElement;
+  window.scrollTo({
+    top: projectsgDiv.offsetTop - 64,
+    behavior: "smooth"
+  })
+  openNabToggle.value = false;
+}
+const career = ref()
+
+function gotoCareer(){
+  let careerDiv = career.value.$el as HTMLDivElement;
+  window.scrollTo({
+    top: careerDiv.offsetTop - 64,
+    behavior: "smooth"
+  })
+  openNabToggle.value = false;
+}
 </script>
+
+<style>
+html, body {
+  scroll-behavior: smooth
+}
+</style>
 
 <style scoped>
 
@@ -125,6 +191,9 @@ header {
   font-family: 'Noto Sans KR';
   height: 4.5rem;
 }
+#xsHeader, #lgHeader {
+  z-index: 2;
+}
 
 #xsHeader1{
   display: flex;
@@ -138,6 +207,10 @@ header {
 #homeNav {
   font-size: 1.5rem;
   color: hsla(0, 0%, 100%, .7);
+  cursor: pointer;
+}
+#homeNav:hover {
+  color: white;
 }
 
 .xsScrollOver .headerBtn {
@@ -224,6 +297,9 @@ header {
 
   #homeNav {
     color: #212529;
+  }
+  #homeNav:hover {
+    color: #f4623a;
   }
   .openNav{
     max-height: 196px;

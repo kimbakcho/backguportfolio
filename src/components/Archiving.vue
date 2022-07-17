@@ -140,7 +140,13 @@ function goToLinkSite(site: string){
 
 }
 @media screen and (max-width:480px) {
-
+  .archivingTitle{
+    font-size: 2.0rem;
+  }
+  .archivingIcon{
+    font-size: 2.3rem !important;
+  }
 }
+
 </style>
 

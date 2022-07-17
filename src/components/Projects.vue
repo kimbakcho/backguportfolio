@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <div style="width: 70vw; padding: 64px 32px;">
+    <div class="projectRoot">
       <div class="Projects">
         <q-icon class="projectIcon" size="3rem" name="fa-solid fa-star">
         </q-icon>
@@ -48,6 +48,37 @@ import Tenniswing from "@/components/Project/Tenniswing.vue"
   margin-left: 32px;
   border-bottom: 1px solid white;
   color: white;
+}
+.projectRoot{
+  width: 70vw;
+  padding: 64px 32px;
+}
+@media screen and (max-width:768px) {
+  .projectTitle{
+    font-size: 2.0rem;
+  }
+
+  .projectIcon{
+    font-size: 2.3rem !important;
+  }
+
+  .projectRoot{
+    width: 80vw;
+    padding: 32px 0px;
+  }
+}
+@media screen and (max-width:480px) {
+  .projectTitle{
+    font-size: 2.0rem;
+  }
+  .projectIcon{
+    font-size: 2.3rem !important;
+  }
+
+  .projectRoot{
+    width: 90vw;
+    padding: 32px 0px;
+  }
 }
 
 

@@ -151,12 +151,33 @@ function detailShow(){
   }
 }
 @media screen and (max-width:768px) {
-
+  .card{
+    padding: 32px 0px;
+  }
+  .slider{
+    width: 80vw ;
+  }
+  .content{
+    padding: 16px;
+  }
+  .contentTextBox{
+    width: calc(80vw - 32px);
+  }
 
 }
 @media screen and (max-width:480px) {
-
-
+  .card{
+    padding: 32px 0px;
+  }
+  .slider{
+    width: 90vw;
+  }
+  .content{
+    padding: 16px;
+  }
+  .contentTextBox{
+    width: calc(90vw - 32px);
+  }
 }
 </style>
 <style>

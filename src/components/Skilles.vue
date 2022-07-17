@@ -136,6 +136,11 @@
 
 }
 @media screen and (max-width:480px) {
-
+  .skillsTitle{
+    font-size: 2.0rem;
+  }
+  .skillIcon{
+    font-size: 2.3rem !important;
+  }
 }
 </style>

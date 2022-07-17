@@ -85,7 +85,9 @@
   }
 }
 @media screen and (max-width:480px) {
-
+  #mainTitleText{
+    font-size: 2.4rem;color: white;
+  }
 }
 
 </style>

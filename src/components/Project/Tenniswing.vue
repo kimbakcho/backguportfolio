@@ -19,7 +19,7 @@
         </div>
       </template>
       <template v-slot:summary>
-        <div class="container">
+        <div class="container" style="padding-top: 16px">
           <div class="gTitle">
             <q-icon name="fa-solid fa-check"></q-icon>
             주요 기능

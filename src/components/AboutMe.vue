@@ -1,6 +1,6 @@
 <template>
   <div style="width: 100%; display: flex;justify-content: center;padding: 64px 0px">
-    <div style="max-width: 70vw;width: 70vw">
+    <div style="width: 70vw">
       <div class="AboutName" style="padding-bottom: 32px">
         <q-icon name="fa-solid fa-address-card" size="3rem" class="aboutMeIcon">
 
@@ -165,6 +165,11 @@
 
 }
 @media screen and (max-width:480px) {
-
+  .aboutTitle{
+    font-size: 2.0rem;
+  }
+  .aboutMeIcon{
+    font-size: 2.3rem !important;
+  }
 }
 </style>
