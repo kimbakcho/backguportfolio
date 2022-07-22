@@ -172,11 +172,6 @@ function gotoCareer(){
 }
 </script>
 
-<style>
-html, body {
-  scroll-behavior: smooth
-}
-</style>
 
 <style scoped>
 

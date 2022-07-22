@@ -45,7 +45,7 @@
             Front Stack
           </div>
           <div>
-            Vue,TypeScript,Flutter
+            Vue,TypeScript,Flutter,TypeScript
           </div>
           <div>
 
@@ -86,173 +86,145 @@
       </template>
 
     </ProjectCard>
-    <q-dialog
-        v-model="dialog"
-        persistent
-        :maximized="maximizedToggle"
-        transition-show="slide-up"
-        transition-hide="slide-down"
-    >
-      <q-card class="bg-white">
-        <div class="row items-center" style="background-color: black;color: white;padding: 8px">
-          <div style="font-size: 1rem;font-weight: bold">
-            READ ME
+    <ProjectDetailDialog v-model="dialog">
+      <template v-slot:detailContent>
+          <div class="dTitle" >
+            테니스 윙 (Tennis wing)
           </div>
-          <q-space />
-          <q-btn dense flat icon="minimize" @click="maximizedToggle = false" :disable="!maximizedToggle">
-            <q-tooltip v-if="maximizedToggle" class="bg-white text-primary">Minimize</q-tooltip>
-          </q-btn>
-          <q-btn dense flat icon="crop_square" @click="maximizedToggle = true" :disable="maximizedToggle">
-            <q-tooltip v-if="!maximizedToggle" class="bg-white text-primary">Maximize</q-tooltip>
-          </q-btn>
-          <q-btn dense flat icon="close" v-close-popup>
-            <q-tooltip class="bg-white text-primary">Close</q-tooltip>
-          </q-btn>
-        </div>
-        <q-card-section style="max-width: 1320px;margin-left: auto;margin-right: auto;height: calc(100vh - (35px + 16px));overflow: auto">
-          <article>
-            <div class="dTitle" >
-              테니스 윙 (Tennis wing)
-            </div>
-            <div class="dSubTitle" >
-              <q-icon name="fa-solid fa-dice-d20">
+          <div class="dSubTitle" >
+            <q-icon name="fa-solid fa-dice-d20">
 
-              </q-icon>
-              <div style="margin-left: 8px">
-                Deployment Url
+            </q-icon>
+            <div style="margin-left: 8px">
+              Deployment Url
+            </div>
+
+          </div>
+          <div class="link" @click="gotoWebPage('https://tenniswing.com')" style="font-size: 1.2rem">
+            https://tenniswing.com
+          </div>
+          <div>
+            <div class="row items-center" style="margin-top: 16px">
+              <img src="@/assets/summary.png" style="height: 30px" />
+              <div style="margin-left: 16px;font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
+                Summary
               </div>
-
             </div>
-            <div class="link" @click="gotoWebPage('https://tenniswing.com')" style="font-size: 1.2rem">
-              https://tenniswing.com
-            </div>
-            <div>
-              <div class="row items-center" style="margin-top: 16px">
-                <img src="@/assets/summary.png" style="height: 30px" />
-                <div style="margin-left: 16px;font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
-                  Summary
-                </div>
-              </div>
-              <div style="font-family: 'Noto Sans KR';font-size: 1.1rem">
-                <div style="margin-top: 8px;" >
-                  <p>
-                    <strong>테니스 초보의 경우 수준이 맞는 사람이 사람을 찾기가 어렵고 개발 당시 해당 부분을 해소 할수 있는 고도화 된 플랫폼이 존재 하지 않았기 때문에 해당 앱을
-                      개발</strong> 하게 되었습니다.
-                  </p>
-
-                  <p>
-                    개발 초창기 단순 테니스 사람의 매칭 뿐 아니라 좋은 아이디어가 생각이 나서 아래와 같은 <strong>추가 기능</strong>들을 개발 하게 되었습니다.
-                  </p>
-                  <div style="font-weight: bold;font-size: 1.3rem">
-                    *추가 기능
-                  </div>
-                  <ul>
-                    <li>
-                      인스타를 벤치 마킹한 SNS 기능
-                    </li>
-                    <li>
-                      애플 워치,갤럭시 워치,PC 등등 원격으로 조정 가능한 점수판 기능
-                    </li>
-                    <li>
-                      위치기반으로 벽치기 연습 장소 공유
-                    </li>
-                    <li>
-                      상대방으로 부터 게임을 도전 받을수 있는 기능
-                    </li>
-                    <li>
-                      마케팅 증진을 위한 테니스 용품 구매 가능한 포인트 상점
-                    </li>
-                    <li>
-                      랜덤으로 적절한 상대를 추천 해주는 기능
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="row items-center" >
-                  <img src="@/assets/marketing.png" style="height: 35px"/>
-                  <div style="margin-left: 16px;font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
-                    마케팅 방법
-                  </div>
-                </div>
-                <p style="margin-top: 16px">
-                  다양한 마케팅을 시도해 보았습니다. <strong>인스타,구글 애널리틱스,META(구 페이스북),Youtube, 네이버, Google 등의 창구에 캠페인</strong>을
-                  직접 등록하고 마케팅을 진행했습니다.
+            <div style="font-family: 'Noto Sans KR';font-size: 1.1rem">
+              <div style="margin-top: 8px;" >
+                <p>
+                  <strong>테니스 초보의 경우 수준이 맞는 사람이 사람을 찾기가 어렵고 개발 당시 해당 부분을 해소 할수 있는 고도화 된 플랫폼이 존재 하지 않았기 때문에 해당 앱을
+                    개발</strong> 하게 되었습니다.
                 </p>
-                <div  style="font-weight: bold;font-size: 1.3rem" >
-                  *마케팅에서 느낀점
+
+                <p>
+                  개발 초창기 단순 테니스 사람의 매칭 뿐 아니라 좋은 아이디어가 생각이 나서 아래와 같은 <strong>추가 기능</strong>들을 개발 하게 되었습니다.
+                </p>
+                <div style="font-weight: bold;font-size: 1.3rem">
+                  *추가 기능
                 </div>
                 <ul>
                   <li>
-                    빅데이터를 공부 하였기 때문에 <strong>구글 애널리 틱스</strong>를 적극 활용해 보았지만 소규모에서는 빅데이터 기술의 효율 성이 크지 않았습니다.
+                    인스타를 벤치 마킹한 SNS 기능
                   </li>
                   <li>
-                    <strong>인스타</strong>의 경우 직접 유저와 소통하기 때문에 비용대비 신규 유저의 반응과 가입하는 부분에 있어서 효과적이 었지만
-                    꾸준히 컨텐츠를 생산하고 해당 컨텐츠를 광고 하는 자료를 만드는것은 많은 시간와 창의력을 필요로 했습니다.
+                    애플 워치,갤럭시 워치,PC 등등 원격으로 조정 가능한 점수판 기능
                   </li>
                   <li>
-                     <strong>Youtube,Meta</strong>의 경우 광고비에 지출을 하는 만큼 신규 유저가 들어 왔습니다. 신기한 경험은 소규모에서는 비용대비 신규 유저 가입률이
-                    거의 정비례 했습니다.
+                    위치기반으로 벽치기 연습 장소 공유
                   </li>
-
+                  <li>
+                    상대방으로 부터 게임을 도전 받을수 있는 기능
+                  </li>
+                  <li>
+                    마케팅 증진을 위한 테니스 용품 구매 가능한 포인트 상점
+                  </li>
+                  <li>
+                    랜덤으로 적절한 상대를 추천 해주는 기능
+                  </li>
                 </ul>
-                <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
-                  🔍 Meaning
-                </div>
-                <div style="margin-top: 16px">
-                  <p>
-                    프로젝트를 혼자서 진행 하면서 개발 이외의 부분<strong>디자인,마케팅,비지니스 모델</strong> 등을 많이 고민하면서 프로그램을
-                    개발 하였습니다. 이러한 경험이 추후 다양한 전문직 사람들과 일하는데 <strong>공감대를 쌓고 소통</strong>하며 일하는데 도움을 줄 것이라고
-                    믿고 있습니다.</p>
-                  <br>
-                  <p>
-                    개발에 있어서 테크니컬 하고 분석 하고 파고 들고 하는 부분 또한 재미가 있지만
-                    이번 개발을 통해 <strong>실제 유저와 만나 테니스 게임도 진행해 보고 다양한 유저들의 의견 및 소통등을 통해서 개발에 대한
-                    크나큰 동기 부여</strong>를 받은것이 가장큰 의미가 있었습니다.
-                  </p>
-
-                </div>
-                <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
-                  🔨 Technology Stack(s)
-                </div>
-                <div>
-                  <ul>
-                    <li>
-                      Backend: SpringBoot, Spring JPA, QueryDSL, Spring Security, WebSocket
-                    </li>
-                    <li>
-                      Front End: Vue, Flutter, Android(java), Ios(swift), WebSocket
-                    </li>
-                    <li>
-                      Mobile: Android,Ios,Web
-                    </li>
-                    <li>
-                      DB: mariaDB
-                    </li>
-                    <li>
-                      Design: AdobeXD
-                    </li>
-                    <li>
-                      IDE: IntelliJ
-                    </li>
-                  </ul>
-                </div>
-
               </div>
 
+              <div class="row items-center" >
+                <img src="@/assets/marketing.png" style="height: 35px"/>
+                <div style="margin-left: 16px;font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
+                  마케팅 방법
+                </div>
+              </div>
+              <p style="margin-top: 16px">
+                다양한 마케팅을 시도해 보았습니다. <strong>인스타,구글 애널리틱스,META(구 페이스북),Youtube, 네이버, Google 등의 창구에 캠페인</strong>을
+                직접 등록하고 마케팅을 진행했습니다.
+              </p>
+              <div  style="font-weight: bold;font-size: 1.3rem" >
+                *마케팅에서 느낀점
+              </div>
+              <ul>
+                <li>
+                  빅데이터를 공부 하였기 때문에 <strong>구글 애널리 틱스</strong>를 적극 활용해 보았지만 소규모에서는 빅데이터 기술의 효율 성이 크지 않았습니다.
+                </li>
+                <li>
+                  <strong>인스타</strong>의 경우 직접 유저와 소통하기 때문에 비용대비 신규 유저의 반응과 가입하는 부분에 있어서 효과적이 었지만
+                  꾸준히 컨텐츠를 생산하고 해당 컨텐츠를 광고 하는 자료를 만드는것은 많은 시간와 창의력을 필요로 했습니다.
+                </li>
+                <li>
+                  <strong>Youtube,Meta</strong>의 경우 광고비에 지출을 하는 만큼 신규 유저가 들어 왔습니다. 신기한 경험은 소규모에서는 비용대비 신규 유저 가입률이
+                  거의 정비례 했습니다.
+                </li>
 
+              </ul>
+              <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
+                🔍 Meaning
+              </div>
+              <div style="margin-top: 16px">
+                <p>
+                  프로젝트를 혼자서 진행 하면서 개발 이외의 부분<strong>디자인,마케팅,비지니스 모델</strong> 등을 많이 고민하면서 프로그램을
+                  개발 하였습니다. 이러한 경험이 추후 다양한 전문직 사람들과 일하는데 <strong>공감대를 쌓고 소통</strong>하며 일하는데 도움을 줄 것이라고
+                  믿고 있습니다.</p>
+                <br>
+                <p>
+                  개발에 있어서 테크니컬 하고 분석 하고 파고 들고 하는 부분 또한 재미가 있지만
+                  이번 개발을 통해 <strong>실제 유저와 만나 테니스 게임도 진행해 보고 다양한 유저들의 의견 및 소통등을 통해서 개발에 대한
+                  크나큰 동기 부여</strong>를 받은것이 가장큰 의미가 있었습니다.
+                </p>
+
+              </div>
+              <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
+                🔨 Technology Stack(s)
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    Backend: SpringBoot, Spring JPA, QueryDSL, Spring Security, WebSocket
+                  </li>
+                  <li>
+                    Front End: Vue, Flutter, Android(java), Ios(swift), WebSocket, TypeScript
+                  </li>
+                  <li>
+                    Mobile: Android,Ios,Web
+                  </li>
+                  <li>
+                    DB: mariaDB
+                  </li>
+                  <li>
+                    Design: AdobeXD
+                  </li>
+                  <li>
+                    IDE: IntelliJ
+                  </li>
+                </ul>
+              </div>
 
             </div>
-          </article>
+          </div>
 
-        </q-card-section>
-      </q-card>
-
-    </q-dialog>
+      </template>
+    </ProjectDetailDialog>
   </div>
 </template>
 
 <script setup lang="ts">
 import ProjectCard from "@/components/ProjectCard.vue"
+import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 import {ref} from "vue";
 
 const sliderImage = ref(["../assets/tenniswing/tennisgooglePlay1.png",
@@ -264,7 +236,7 @@ const sliderImage = ref(["../assets/tenniswing/tennisgooglePlay1.png",
   "../assets/tenniswing/tenninwatch.png"])
 
 const dialog=ref(false);
-const maximizedToggle = ref(true)
+
 
 function gotoWebPage(url: string){
   window.open(url,"_blank")
@@ -313,6 +285,5 @@ function onDetailShow(){
     grid-template-columns: 1fr;
     overflow-wrap: anywhere;
   }
-
 }
 </style>

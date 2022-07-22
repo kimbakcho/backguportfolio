@@ -12,6 +12,9 @@
           <Tenniswing>
 
           </Tenniswing>
+        <Wecango style="margin-top: 16px">
+
+        </Wecango>
       </div>
     </div>
   </div>
@@ -19,6 +22,7 @@
 
 <script setup lang="ts">
 import Tenniswing from "@/components/Project/Tenniswing.vue"
+import Wecango from "@/components/Project/Wecango.vue"
 </script>
 
 <style scoped>
