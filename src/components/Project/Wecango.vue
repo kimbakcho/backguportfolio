@@ -114,8 +114,25 @@
               </li>
             </ul>
             <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
+              😀 GET
+            </div>
+            <div>
+              <ul>
+                <li>
+                  전문 디자이너 산출을 프로젝트 적용
+                </li>
+                <li>
+                  App의 WebView 에 Web Wrap 시 만날수 있는 다양한 문제 해결
+                </li>
+                <li>
+                  스토어에 대한 정치적 요소 파악하기
+                </li>
+              </ul>
+            </div>
+            <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
               🔨 Technology Stack(s)
             </div>
+
             <div>
               <ul>
                 <li>

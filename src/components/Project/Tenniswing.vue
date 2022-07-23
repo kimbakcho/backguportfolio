@@ -189,6 +189,36 @@
 
               </div>
               <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
+                ☔ RISK
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    마케팅에 사용할 금액
+                  </li>
+                  <li>
+                    디자인의 객관적인 퀄리티
+                  </li>
+                </ul>
+              </div>
+              <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
+                😀 GET
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    새로운 WebSocket,PWA(Push 메세지),IOS,Watch 의 개발 경험
+                  </li>
+                  <li>
+                    유저들과 소통하며 개발 하기
+                  </li>
+                  <li>
+                    버그로 인한 테스트의 중요성
+                  </li>
+                </ul>
+              </div>
+
+              <div style="font-size: 1.5rem;font-family: 'Noto Sans KR';font-weight: bold">
                 🔨 Technology Stack(s)
               </div>
               <div>

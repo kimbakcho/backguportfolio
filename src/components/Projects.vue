@@ -15,6 +15,9 @@
         <Wecango style="margin-top: 16px">
 
         </Wecango>
+        <Forutona style="margin-top: 16px">
+
+        </Forutona>
       </div>
     </div>
   </div>
@@ -23,6 +26,7 @@
 <script setup lang="ts">
 import Tenniswing from "@/components/Project/Tenniswing.vue"
 import Wecango from "@/components/Project/Wecango.vue"
+import Forutona from "@/components/Project/Forutona.vue"
 </script>
 
 <style scoped>
