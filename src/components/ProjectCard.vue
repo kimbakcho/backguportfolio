@@ -17,7 +17,7 @@
             :pagination="{ clickable: true }"
             class="projectCardSwiper" >
           <swiper-slide v-for="item in sliderImage">
-            <div style="display: flex;justify-content: center">
+            <div style="display: flex;justify-content: center;cursor: pointer" @click="showImage(item)">
               <img :src="getImageUrl(item)" class="projectImg" >
             </div>
 
@@ -54,6 +54,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {onMounted, reactive} from "vue";
+import {useQuasar} from "quasar";
+import ImageViewerDialog from "@/components/ImageViewerDialog.vue"
 const props = defineProps<{
   title: string,
   subtitle: string,
@@ -69,6 +71,17 @@ function getImageUrl(image: string){
 const modules = reactive([
     Navigation,Pagination
 ])
+
+const $q= useQuasar();
+function showImage(img: string){
+  $q.dialog({
+    component:ImageViewerDialog,
+    componentProps: {
+      image: img
+    }
+  })
+}
+
 function detailShow(){
   emits("detailShow")
 }
@@ -127,6 +140,7 @@ function detailShow(){
 }
 .projectImg{
   height: 500px;
+  max-width: 468px;
 }
 @media screen and (max-width:1800px) {
   .contentRoot{
@@ -145,6 +159,7 @@ function detailShow(){
 @media screen and (max-width:900px) {
   .projectImg{
     height: 280px;
+    max-width: 353px;
   }
   .slider{
     width: calc(70vw - 160px);
@@ -163,6 +178,9 @@ function detailShow(){
   .contentTextBox{
     width: calc(80vw - 32px);
   }
+  .projectTitle{
+    font-size: 1.5rem;
+  }
 
 }
 @media screen and (max-width:480px) {
@@ -177,6 +195,9 @@ function detailShow(){
   }
   .contentTextBox{
     width: calc(90vw - 32px);
+  }
+  .projectTitle{
+    font-size: 1.2rem;
   }
 }
 </style>

@@ -18,6 +18,15 @@
         <Forutona style="margin-top: 16px">
 
         </Forutona>
+        <BackWaferMapDefectProject style="margin-top: 16px">
+
+        </BackWaferMapDefectProject>
+        <CapaAI style="margin-top: 16px">
+
+        </CapaAI>
+        <PattenDefectAI style="margin-top: 16px">
+
+        </PattenDefectAI>
       </div>
     </div>
   </div>
@@ -27,6 +36,9 @@
 import Tenniswing from "@/components/Project/Tenniswing.vue"
 import Wecango from "@/components/Project/Wecango.vue"
 import Forutona from "@/components/Project/Forutona.vue"
+import BackWaferMapDefectProject from "@/components/Project/BackWaferMapDefectProject.vue"
+import CapaAI from "@/components/Project/CapaAI.vue"
+import PattenDefectAI from "@/components/Project/PattenDefectAI.vue"
 </script>
 
 <style scoped>

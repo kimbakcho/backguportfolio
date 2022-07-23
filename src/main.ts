@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { Quasar } from 'quasar'
+import {Dialog, Quasar} from 'quasar'
 
 import App from './App.vue'
 import router from './router'
@@ -16,8 +16,7 @@ app.use(router)
 
 app.use(Quasar, {
     plugins: {
-
-
+        Dialog
     }, // import Quasar plugins and add here
 })
 
