@@ -27,6 +27,9 @@
         <PattenDefectAI style="margin-top: 16px">
 
         </PattenDefectAI>
+        <LeadTimeManager style="margin-top: 16px">
+
+        </LeadTimeManager>
       </div>
     </div>
   </div>
@@ -39,6 +42,7 @@ import Forutona from "@/components/Project/Forutona.vue"
 import BackWaferMapDefectProject from "@/components/Project/BackWaferMapDefectProject.vue"
 import CapaAI from "@/components/Project/CapaAI.vue"
 import PattenDefectAI from "@/components/Project/PattenDefectAI.vue"
+import LeadTimeManager from "@/components/Project/LeadTimeManager.vue"
 </script>
 
 <style scoped>
