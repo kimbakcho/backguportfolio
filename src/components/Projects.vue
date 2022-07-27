@@ -30,6 +30,15 @@
         <LeadTimeManager style="margin-top: 16px">
 
         </LeadTimeManager>
+        <PortMonitoring style="margin-top: 16px">
+
+        </PortMonitoring>
+        <PortOccupation style="margin-top: 16px">
+
+        </PortOccupation>
+        <GasRoom style="margin-top: 16px">
+
+        </GasRoom>
       </div>
     </div>
   </div>
@@ -43,6 +52,9 @@ import BackWaferMapDefectProject from "@/components/Project/BackWaferMapDefectPr
 import CapaAI from "@/components/Project/CapaAI.vue"
 import PattenDefectAI from "@/components/Project/PattenDefectAI.vue"
 import LeadTimeManager from "@/components/Project/LeadTimeManager.vue"
+import PortMonitoring from "@/components/Project/PortMonitoring.vue"
+import PortOccupation from "@/components/Project/PortOccupation.vue"
+import GasRoom from "@/components/Project/GasRoom.vue"
 </script>
 
 <style scoped>
