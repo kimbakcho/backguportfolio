@@ -39,6 +39,9 @@
         <GasRoom style="margin-top: 16px">
 
         </GasRoom>
+        <ObjectCheck style="margin-top: 16px">
+
+        </ObjectCheck>
       </div>
     </div>
   </div>
@@ -55,6 +58,7 @@ import LeadTimeManager from "@/components/Project/LeadTimeManager.vue"
 import PortMonitoring from "@/components/Project/PortMonitoring.vue"
 import PortOccupation from "@/components/Project/PortOccupation.vue"
 import GasRoom from "@/components/Project/GasRoom.vue"
+import ObjectCheck from "@/components/Project/ObjectCheck.vue"
 </script>
 
 <style scoped>
