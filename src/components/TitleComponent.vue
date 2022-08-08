@@ -13,13 +13,18 @@
       <p>매일 꾸준히 노력함의 중요성을 잘 아는 개발자 입니다.</p>
       <p>개발할때 몰입하여 분석하고 진취 하는것이 장점인 개발자 입니다.</p>
     </div>
-    <q-btn id="moreAboutMe" style="" label="더 알아보기 ↓"  rounded align="center" size="lg" >
+    <q-btn id="moreAboutMe" style="" label="더 알아보기 ↓"  rounded align="center" size="lg" @click="clickMoreAboutMe">
 
     </q-btn>
   </div>
 </template>
 
 <script setup lang="ts">
+
+const emit = defineEmits(["clickMoreAboutMe"])
+function clickMoreAboutMe(){
+  emit("clickMoreAboutMe")
+}
 
 </script>
 

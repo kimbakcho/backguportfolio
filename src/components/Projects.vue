@@ -42,6 +42,9 @@
         <ObjectCheck style="margin-top: 16px">
 
         </ObjectCheck>
+        <YieldDash style="margin-top: 16px">
+
+        </YieldDash>
       </div>
     </div>
   </div>
@@ -59,6 +62,7 @@ import PortMonitoring from "@/components/Project/PortMonitoring.vue"
 import PortOccupation from "@/components/Project/PortOccupation.vue"
 import GasRoom from "@/components/Project/GasRoom.vue"
 import ObjectCheck from "@/components/Project/ObjectCheck.vue"
+import YieldDash from "@/components/Project/YieldDash.vue"
 </script>
 
 <style scoped>

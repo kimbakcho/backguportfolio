@@ -48,7 +48,7 @@
         </div>
       </div>
     </header>
-    <TitleComponent>
+    <TitleComponent @clickMoreAboutMe="gotoProjects">
 
     </TitleComponent>
     <AboutMe ref="aboutMe">

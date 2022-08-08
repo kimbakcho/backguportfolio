@@ -19,9 +19,6 @@
 
         <div style="padding-left: 32px; font-family: 'Noto Sans KR';font-size: 1rem">
           <div class="headerContent" style="padding-bottom: 16px;border-bottom: 1px solid #ccc">
-            <div style="font-family: 'Black Han Sans';font-size: 2rem;">
-              (주) 와이솔
-            </div>
             <div style="color: #6c757d">
               2016.10 - 현재
             </div>
