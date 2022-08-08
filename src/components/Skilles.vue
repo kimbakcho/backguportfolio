@@ -14,7 +14,7 @@
             <div class="contentTitle">
               Frontend
             </div>
-            <img src="@/assets/frontskilllogo.png" style="margin-top: 16px">
+            <img src="@/assets/frontSkilllogo.png" style="margin-top: 16px">
           </div>
           <div class="contentBox" >
             <div class="contentTitle">
