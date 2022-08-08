@@ -125,11 +125,11 @@ import ProjectCard from "@/components/ProjectCard.vue"
 import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 import {ref} from "vue";
 
-const sliderImage = ref(["../assets/BackWaferMapDefectProject/defectImage1.png",
-  "../assets/BackWaferMapDefectProject/defectImage2.png",
-  "../assets/BackWaferMapDefectProject/defectImage3.png",
-  "../assets/BackWaferMapDefectProject/defectImage4.png",
-  "../assets/BackWaferMapDefectProject/defectImage5.png"])
+const sliderImage = ref(["/BackWaferMapDefectProject/defectImage1.png",
+  "/BackWaferMapDefectProject/defectImage2.png",
+  "/BackWaferMapDefectProject/defectImage3.png",
+  "/BackWaferMapDefectProject/defectImage4.png",
+  "/BackWaferMapDefectProject/defectImage5.png"])
 
 const dialog = ref(false)
 

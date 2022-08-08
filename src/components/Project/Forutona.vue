@@ -189,12 +189,12 @@ import ProjectCard from "@/components/ProjectCard.vue"
 import {ref} from "vue";
 import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 
-const sliderImage = ref(["../assets/Forutona/forutona1.png",
-  "../assets/Forutona/forutona2.png",
-  "../assets/Forutona/forutona3.png",
-  "../assets/Forutona/forutona4.png",
-  "../assets/Forutona/forutona5.png",
-  "../assets/Forutona/forutona6.png"])
+const sliderImage = ref(["/Forutona/forutona1.png",
+  "/Forutona/forutona2.png",
+  "/Forutona/forutona3.png",
+  "/Forutona/forutona4.png",
+  "/Forutona/forutona5.png",
+  "/Forutona/forutona6.png"])
 
 function gotoWebPage(url: string) {
   window.open(url, "_blank")

@@ -168,12 +168,12 @@ import ProjectCard from "@/components/ProjectCard.vue"
 import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 import {ref} from "vue";
 
-const sliderImage = ref(["../assets/wecango/wecango1.png",
-  "../assets/wecango/wecango2.png",
-  "../assets/wecango/wecango3.png",
-  "../assets/wecango/wecango4.png",
-  "../assets/wecango/wecango5.png",
-  "../assets/wecango/wecango6.png"])
+const sliderImage = ref(["/wecango/wecango1.png",
+  "/wecango/wecango2.png",
+  "/wecango/wecango3.png",
+  "/wecango/wecango4.png",
+  "/wecango/wecango5.png",
+  "/wecango/wecango6.png"])
 
 const dialog = ref(false)
 

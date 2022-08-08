@@ -194,11 +194,11 @@ import ProjectCard from "@/components/ProjectCard.vue"
 import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 import {ref} from "vue";
 
-const sliderImage = ref(["../assets/GasRoom/gasroom1.png",
-  "../assets/GasRoom/gasroom2.png",
-  "../assets/GasRoom/gasroom3.png",
-  "../assets/GasRoom/gasroom4.png",
-  "../assets/GasRoom/gasroom5.png"])
+const sliderImage = ref(["/GasRoom/gasroom1.png",
+  "/GasRoom/gasroom2.png",
+  "/GasRoom/gasroom3.png",
+  "/GasRoom/gasroom4.png",
+  "/GasRoom/gasroom5.png"])
 
 const dialog = ref(false)
 

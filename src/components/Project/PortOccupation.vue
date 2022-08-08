@@ -120,7 +120,7 @@ import ProjectCard from "@/components/ProjectCard.vue"
 import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 import {ref} from "vue";
 
-const sliderImage = ref(["../assets/portOccupation/portoccu.png"])
+const sliderImage = ref(["/portOccupation/portoccu.png"])
 
 const dialog = ref(false)
 

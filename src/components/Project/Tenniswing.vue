@@ -257,13 +257,13 @@ import ProjectCard from "@/components/ProjectCard.vue"
 import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 import {ref} from "vue";
 
-const sliderImage = ref(["../assets/tenniswing/tennisgooglePlay1.png",
-  "../assets/tenniswing/tennisgooglePlay2.JPG",
-  "../assets/tenniswing/tennisggoogleplay3.JPG",
-  "../assets/tenniswing/tennisgoogleplay4.JPG",
-  "../assets/tenniswing/tennisgooglePlay5.JPG",
-  "../assets/tenniswing/tennisgooglePlay6.JPG",
-  "../assets/tenniswing/tenninwatch.png"])
+const sliderImage = ref(["/tenniswing/tennisgooglePlay1.png",
+  "/tenniswing/tennisgooglePlay2.JPG",
+  "/tenniswing/tennisggoogleplay3.JPG",
+  "/tenniswing/tennisgoogleplay4.JPG",
+  "/tenniswing/tennisgooglePlay5.JPG",
+  "/tenniswing/tennisgooglePlay6.JPG",
+  "/tenniswing/tenninwatch.png"])
 
 const dialog=ref(false);
 

@@ -123,9 +123,9 @@ import ProjectCard from "@/components/ProjectCard.vue"
 import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 import {ref} from "vue";
 
-const sliderImage = ref(["../assets/YieldDash/yield1.png",
-  "../assets/YieldDash/yield2.png",
-  "../assets/YieldDash/yield3.png"
+const sliderImage = ref(["/YieldDash/yield1.png",
+  "/YieldDash/yield2.png",
+  "/YieldDash/yield3.png"
 ])
 
 const dialog = ref(false)

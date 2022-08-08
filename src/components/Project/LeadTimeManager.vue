@@ -153,8 +153,8 @@ import ProjectCard from "@/components/ProjectCard.vue"
 import ProjectDetailDialog from "@/components/Project/ProjectDetailDialog.vue"
 import {ref} from "vue";
 
-const sliderImage = ref(["../assets/LeadTimeManager/leadtimeManager1.png",
-  "../assets/LeadTimeManager/leadtimeManager2.png"])
+const sliderImage = ref(["/LeadTimeManager/leadtimeManager1.png",
+  "/LeadTimeManager/leadtimeManager2.png"])
 
 const dialog = ref(false)
 

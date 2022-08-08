@@ -56,6 +56,7 @@ import 'swiper/css/pagination';
 import {onMounted, reactive} from "vue";
 import {useQuasar} from "quasar";
 import ImageViewerDialog from "@/components/ImageViewerDialog.vue"
+
 const props = defineProps<{
   title: string,
   subtitle: string,
@@ -66,7 +67,7 @@ const emits = defineEmits(['detailShow'])
 
 function getImageUrl(image: string){
   const imageUrl = new URL(image, import.meta.url).href
-  return imageUrl
+  return  imageUrl
 }
 const modules = reactive([
     Navigation,Pagination
