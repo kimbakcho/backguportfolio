@@ -42,8 +42,7 @@ defineEmits([
 ])
 
 function getImageUrl(){
-  const imageUrl = new URL(props.image, import.meta.url).href
-  return imageUrl
+  return props.image
 }
 const { dialogRef, onDialogHide, onDialogOK, onDialogCancel } = useDialogPluginComponent()
 
