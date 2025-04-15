@@ -3,7 +3,7 @@
     <header id="xsHeader" :class="{xsScrollOver: isXsScrollOver()}" >
       <div id="xsHeader1">
         <nav id="homeNav" @click="gotoHomeScroll">
-          백구 Portfolio
+          백호 Portfolio
         </nav>
         <div>
           <nav id="SubNav">
@@ -19,7 +19,7 @@
     <header id="lgHeader">
       <div id="lgHeader1">
         <nav id="homeNav" @click="gotoHomeScroll">
-          백구 Portfolio
+          백호 Portfolio
         </nav>
         <div>
           <q-btn outline class="navToggle" @click="toggleOpenNav">
@@ -101,7 +101,6 @@ function isXsScrollOver(){
 }
 
 function reSizeEvent(){
-  console.log(window.innerWidth)
 
   if(window.innerWidth>1200){
     openNabToggle.value = false;
@@ -187,7 +186,7 @@ header {
   height: 4.5rem;
 }
 #xsHeader, #lgHeader {
-  z-index: 2;
+  z-index: 3;
 }
 
 #xsHeader1{

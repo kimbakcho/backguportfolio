@@ -29,7 +29,6 @@
 
 <script setup lang="ts">
 import {useDialogPluginComponent} from "quasar";
-import {defineProps} from "vue";
 
 const props = defineProps<{
   image: string

@@ -9,30 +9,48 @@
         </div>
       </div>
       <div class="card">
-          <Tenniswing>
 
-          </Tenniswing>
+        <WaferDefectDetector>
+
+        </WaferDefectDetector>
+
+        <PattenDefectAI style="margin-top: 16px">
+
+        </PattenDefectAI>
+
+        <BackWaferMapDefectProject style="margin-top: 16px">
+
+        </BackWaferMapDefectProject>
+
+        <CapaAI style="margin-top: 16px">
+
+        </CapaAI>
+
+        <EquipmentDataIntegrationPlatform style="margin-top: 16px">
+
+        </EquipmentDataIntegrationPlatform>
+
+        <EquipmentMonitor style="margin-top: 16px">
+
+        </EquipmentMonitor>
+
+        <EquipmentOEEAnalytics style="margin-top: 16px">
+
+        </EquipmentOEEAnalytics>
+
+        <Tenniswing style="margin-top: 16px">
+
+        </Tenniswing>
         <Wecango style="margin-top: 16px">
 
         </Wecango>
         <Forutona style="margin-top: 16px">
 
         </Forutona>
-        <BackWaferMapDefectProject style="margin-top: 16px">
 
-        </BackWaferMapDefectProject>
-        <CapaAI style="margin-top: 16px">
-
-        </CapaAI>
-        <PattenDefectAI style="margin-top: 16px">
-
-        </PattenDefectAI>
         <LeadTimeManager style="margin-top: 16px">
 
         </LeadTimeManager>
-        <PortMonitoring style="margin-top: 16px">
-
-        </PortMonitoring>
         <PortOccupation style="margin-top: 16px">
 
         </PortOccupation>
@@ -51,6 +69,7 @@
 </template>
 
 <script setup lang="ts">
+import WaferDefectDetector from "@/components/Project/WaferDefectDetector.vue"
 import Tenniswing from "@/components/Project/Tenniswing.vue"
 import Wecango from "@/components/Project/Wecango.vue"
 import Forutona from "@/components/Project/Forutona.vue"
@@ -58,68 +77,77 @@ import BackWaferMapDefectProject from "@/components/Project/BackWaferMapDefectPr
 import CapaAI from "@/components/Project/CapaAI.vue"
 import PattenDefectAI from "@/components/Project/PattenDefectAI.vue"
 import LeadTimeManager from "@/components/Project/LeadTimeManager.vue"
-import PortMonitoring from "@/components/Project/PortMonitoring.vue"
+import EquipmentOEEAnalytics from "@/components/Project/EquipmentOEEAnalytics.vue"
 import PortOccupation from "@/components/Project/PortOccupation.vue"
 import GasRoom from "@/components/Project/GasRoom.vue"
 import ObjectCheck from "@/components/Project/ObjectCheck.vue"
 import YieldDash from "@/components/Project/YieldDash.vue"
+import EquipmentDataIntegrationPlatform from "@/components/Project/EquipmentDataIntegrationPlatform.vue"
+import EquipmentMonitor from "@/components/Project/EquipmentMonitor.vue"
 </script>
 
 <style scoped>
-.root{
+.root {
   width: 100%;
   background-color: #1d809f;
   display: flex;
   justify-content: center;
 }
-.Projects{
+
+.Projects {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 16px 0px
 }
+
 .projectIcon {
   cursor: pointer;
   opacity: .5;
 }
+
 .projectIcon:hover {
   opacity: unset;
 }
 
-.projectTitle{
+.projectTitle {
   font-family: 'Black Han Sans';
   font-size: 3rem;
   margin-left: 32px;
   border-bottom: 1px solid white;
   color: white;
 }
-.projectRoot{
+
+.projectRoot {
   width: 70vw;
   padding: 64px 32px;
 }
-@media screen and (max-width:768px) {
-  .projectTitle{
+
+@media screen and (max-width: 768px) {
+  .projectTitle {
     font-size: 2.0rem;
   }
 
-  .projectIcon{
+  .projectIcon {
     font-size: 2.3rem !important;
   }
 
-  .projectRoot{
+  .projectRoot {
     width: 80vw;
     padding: 32px 0px;
   }
 }
-@media screen and (max-width:480px) {
-  .projectTitle{
+
+@media screen and (max-width: 480px) {
+  .projectTitle {
     font-size: 2.0rem;
   }
-  .projectIcon{
+
+  .projectIcon {
     font-size: 2.3rem !important;
   }
 
-  .projectRoot{
+  .projectRoot {
     width: 90vw;
     padding: 32px 0px;
   }

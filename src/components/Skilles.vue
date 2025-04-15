@@ -12,6 +12,24 @@
         <div class="contentBoxRoot">
           <div class="contentBox" >
             <div class="contentTitle">
+              Certificate
+            </div>
+            <img src="@/assets/certificateskill.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              AI
+            </div>
+            <img src="@/assets/aiskill.jpg" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
+              산업용 프로토콜
+            </div>
+            <img src="@/assets/industryProtocolSkill.png" style="margin-top: 16px">
+          </div>
+          <div class="contentBox" >
+            <div class="contentTitle">
               Frontend
             </div>
             <img src="@/assets/frontSkilllogo.png" style="margin-top: 16px">
@@ -34,36 +52,16 @@
             </div>
             <img src="@/assets/embeddedSkill.png" style="margin-top: 16px">
           </div>
-          <div class="contentBox" >
-            <div class="contentTitle">
-              AI
-            </div>
-            <img src="@/assets/aiskill.png" style="margin-top: 16px">
-          </div>
-          <div class="contentBox" >
-            <div class="contentTitle">
-              산업용 프로토콜
-            </div>
-            <img src="@/assets/industryProtocolSkill.png" style="margin-top: 16px">
-          </div>
+
+
           <div class="contentBox" >
             <div class="contentTitle">
               Version Control
             </div>
             <img src="@/assets/versioncontrol.png" style="margin-top: 16px">
           </div>
-          <div class="contentBox" >
-            <div class="contentTitle">
-              Deployment
-            </div>
-            <img src="@/assets/deploymentskill.png" style="margin-top: 16px">
-          </div>
-          <div class="contentBox" >
-            <div class="contentTitle">
-              Certificate
-            </div>
-            <img src="@/assets/certificateskill.png" style="margin-top: 16px">
-          </div>
+
+
         </div>
       </div>
 

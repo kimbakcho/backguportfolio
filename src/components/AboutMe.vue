@@ -21,7 +21,7 @@
               이름
             </div>
             <div  class="content">
-              백구
+              백호
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
               주소지
             </div>
             <div class="content">
-              경기도 오산시
+              경기도 수원시
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@
               경력
             </div>
             <div class="content">
-              9년
+              12년
             </div>
           </div>
         </div>
