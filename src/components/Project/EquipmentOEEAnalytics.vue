@@ -144,12 +144,12 @@
                 <strong>BackEnd:</strong> Python 기반의 Django 프레임워크를 사용하여 안정적이고 확장 가능한 RESTful API 서버 구축. (DRF 사용 등 구체적인 라이브러리 추가 가능)
               </li>
               <li>
-                <strong>FrontEnd:</strong> Vue.js와 UI 라이브러리(예: Quasar)를 활용하여 실시간 데이터 시각화 및 사용자 인터랙션을 위한 반응형 웹 대시보드 개발. (상태 관리: Vuex/Pinia 등 추가 가능)
+                <strong>FrontEnd:</strong> Vue.js와 UI 라이브러리(예: Quasar)를 활용하여 실시간 데이터 시각화 및 사용자 인터랙션을 위한 반응형 웹 대시보드 개발.
               </li>
               <li>
                 <strong>Database:</strong> MariaDB를 사용하여 설비 상태 이력, 생산 데이터 등 대용량 시계열 데이터 저장을 위한 효율적인 스키마 설계 및 쿼리 최적화.
               </li>
-            </ul>
+            </ul>WW
           </div>
         </div>
       </template>

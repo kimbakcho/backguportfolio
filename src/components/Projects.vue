@@ -38,6 +38,35 @@
 
         </EquipmentOEEAnalytics>
 
+
+        <LeadTimeManager style="margin-top: 16px">
+
+        </LeadTimeManager>
+
+        <SampleManager style="margin-top: 16px">
+
+        </SampleManager>
+
+        <PortOccupation style="margin-top: 16px">
+
+        </PortOccupation>
+
+
+        <GasRoom style="margin-top: 16px">
+
+        </GasRoom>
+
+
+        <ObjectCheck style="margin-top: 16px">
+
+        </ObjectCheck>
+
+
+        <YieldDash style="margin-top: 16px">
+
+        </YieldDash>
+
+
         <Tenniswing style="margin-top: 16px">
 
         </Tenniswing>
@@ -48,21 +77,10 @@
 
         </Forutona>
 
-        <LeadTimeManager style="margin-top: 16px">
 
-        </LeadTimeManager>
-        <PortOccupation style="margin-top: 16px">
 
-        </PortOccupation>
-        <GasRoom style="margin-top: 16px">
 
-        </GasRoom>
-        <ObjectCheck style="margin-top: 16px">
 
-        </ObjectCheck>
-        <YieldDash style="margin-top: 16px">
-
-        </YieldDash>
       </div>
     </div>
   </div>
@@ -84,6 +102,7 @@ import ObjectCheck from "@/components/Project/ObjectCheck.vue"
 import YieldDash from "@/components/Project/YieldDash.vue"
 import EquipmentDataIntegrationPlatform from "@/components/Project/EquipmentDataIntegrationPlatform.vue"
 import EquipmentMonitor from "@/components/Project/EquipmentMonitor.vue"
+import SampleManager from "@/components/Project/SampleManager.vue"
 </script>
 
 <style scoped>
