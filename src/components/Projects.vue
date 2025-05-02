@@ -10,7 +10,11 @@
       </div>
       <div class="card">
 
-        <WaferDefectDetector>
+        <EquipmentConsumables>
+
+        </EquipmentConsumables>
+
+        <WaferDefectDetector style="margin-top: 16px">
 
         </WaferDefectDetector>
 
@@ -103,6 +107,7 @@ import YieldDash from "@/components/Project/YieldDash.vue"
 import EquipmentDataIntegrationPlatform from "@/components/Project/EquipmentDataIntegrationPlatform.vue"
 import EquipmentMonitor from "@/components/Project/EquipmentMonitor.vue"
 import SampleManager from "@/components/Project/SampleManager.vue"
+import EquipmentConsumables from "@/components/Project/EquipmentConsumables.vue"
 </script>
 
 <style scoped>
